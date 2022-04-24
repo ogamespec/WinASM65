@@ -1,9 +1,9 @@
 
     ;PROCESSOR 6502
-    ORG $C000
+    .ORG $C000
 
-    INCLUDE "NESREGS.NAS"
-    INCLUDE "VARS.NAS"
+    .INCLUDE "NESREGS.NAS"
+    .INCLUDE "VARS.NAS"
 
 
 RESET:
@@ -6085,8 +6085,8 @@ DEMO_KEYDATA:   .BYTE $3D,  1,  3,$81,  3,$80,$1B,  4,  6,$84,$1B,  4,  2,  5,$3
         .BYTE $FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF
         .BYTE $FF,$FF,$FF,$FF,$FF,$FF
 
-    ORG     $F000
-    INCLUDE "BOOM.NAS"
+    .ORG     $F000
+    .INCLUDE "BOOM.NAS"
 
 
 DUMMY:      .BYTE $FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF,$FF

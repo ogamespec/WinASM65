@@ -112,7 +112,7 @@ namespace WinASM65
         public static readonly Dictionary<Regex, string> RegMap = new Dictionary<Regex, string>
         {
             { StartLocalScopeRegex, StartLocalScope},
-            { EndLocalScopeRegex, EndLocalScope},
+            { EndLocalScopeRegex, EndLocalScope},            
             { MemResReg, MemReserve },
             { DirectiveReg, Directive},
             { LabelDeclareReg, Label},

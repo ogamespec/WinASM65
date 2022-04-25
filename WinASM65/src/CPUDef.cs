@@ -37,7 +37,7 @@ namespace WinASM65
         }                                                                    
 
         public static readonly string[] RelOpc = new string[] { "BCC", "BCS", "BEQ", "BMI", "BNE", "BPL", "BVC", "BVS" };
-        public static readonly string[] AccOpc = new string[] { "ASL ", "LSR", "ROL", "ROR" };
+        public static readonly string[] AccOpc = new string[] { "ASL", "LSR", "ROL", "ROR" };
         public static readonly Dictionary<string, byte[]> OpcTable = new Dictionary<string, byte[]>
         {
             { "ADC", new byte[] {0xff, 0xff, 0x69, 0x6d, 0x7d, 0x79, 0x65, 0x75, 0xff, 0xff, 0x61, 0x71, 0xff } },
@@ -113,9 +113,9 @@ namespace WinASM65
         {
             { StartLocalScopeRegex, StartLocalScope},
             { EndLocalScopeRegex, EndLocalScope},
-            { LabelDeclareReg, Label},
             { MemResReg, MemReserve },
             { DirectiveReg, Directive},
+            { LabelDeclareReg, Label},
             { ConstantReg, Constant },
             { InstrReg, Instruction},
             { MacroReg, CallMacro }
